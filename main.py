@@ -13,7 +13,6 @@ for i, name in enumerate(full_session_names):
 
 
 while year > 1970:
-#while year > 2015:
     #april
     month = "04"
     try:
