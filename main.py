@@ -32,7 +32,6 @@ while year > 1970:
             if len(speakers) > 1:
                 speaker_list = []
                 for speaker in speakers:
-                    #print("         ",speaker.text.strip())
                     speaker_list.append(speaker.text.strip())
 
                 sessions_speakers[full_session_name] = speaker_list
@@ -53,12 +52,10 @@ while year > 1970:
                 session_name = session_name.text.strip()
                 if session_name != "Contents":
                     full_session_name = str(year) + " " + month + " " + session_name
-                    #print(full_session_name)
             speakers = session.find_all('p', class_='subtitle-MuO4X')
             if len(speakers) > 1:
                 speaker_list = []
                 for speaker in speakers:
-                    #print("         ",speaker.text.strip())
                     speaker_list.append(speaker.text.strip())
 
                 sessions_speakers[full_session_name] = speaker_list
