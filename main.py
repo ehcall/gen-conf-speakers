@@ -29,7 +29,6 @@ while year > 1970:
                 session_name = session_name.text.strip()
                 if session_name != "Contents":
                     full_session_name = str(year) + " " + month + " " + session_name
-                    #print(full_session_name)
             speakers = session.find_all('p', class_='subtitle-MuO4X')
             if len(speakers) > 1:
                 speaker_list = []
@@ -85,7 +84,6 @@ for key in sessions_speakers.keys():
             total_women += 1
         else:
             total_other += 1
-            #print(speaker)
-            #print(key,",",speaker)
+            
     print(key,",",total_other,",",total_fp,",",total_q12,",",total_women)
 
